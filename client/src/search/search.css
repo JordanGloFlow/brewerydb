@@ -1,0 +1,24 @@
+.SearchContainer {
+  margin-top: 2em;
+}
+.search-box {
+  width: 25%;
+}
+.radio-container {
+  width: 250px;
+  margin-top: 1em;
+  padding-top: 4px;
+  border: 1px solid black;
+}
+
+.radio-container label {
+  margin-right: 1.5em;
+}
+
+.action-group {
+  flex: auto;
+}
+
+.action-group .ActionButton {
+  float: right;
+}

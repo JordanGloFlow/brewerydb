@@ -1,0 +1,52 @@
+.App {
+  position: absolute;
+  top: 1.875em;
+  width: 100%;
+}
+
+.AppContainer {
+  margin: 0 auto;
+}
+
+.ActionButton {
+  width: 10em;
+  color: white;
+  min-height: 2em;
+  text-align: center;
+  min-width: 170px;
+  min-height: 40px;
+  cursor: pointer;
+}
+
+.flow-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.loading {
+  position: absolute;
+  width: 100%;
+  top: 1.875em;
+  text-align: center;
+}
+
+
+.ActionButton {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 10;
+  -moz-border-radius: 10;
+  border-radius: 7px;
+  color: #ffffff;
+  font-size: 1.25em;
+  padding: 0.625em 1.25em;
+  text-decoration: none;
+}
+
+.ActionButton:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
+}

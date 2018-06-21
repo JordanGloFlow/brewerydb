@@ -1,0 +1,24 @@
+li {
+  list-style: none;
+  margin-bottom: 2em;
+  margin-top: 2em;
+}
+ul {
+  padding-left: 0;
+}
+
+.beer-details {
+  margin-left: 1em;
+}
+
+.beer-details h4 {
+  margin-top: 0;
+}
+
+.beer-image .display-image {
+  height: 100px;
+}
+
+.ListContainer .loading {
+  position: relative;
+}

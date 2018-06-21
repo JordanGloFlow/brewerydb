@@ -1,0 +1,15 @@
+.DetailsContainer {
+  border: 1px solid black;
+  padding: 1em;
+  border-radius: 7px;
+}
+
+.description-container {
+  flex: auto;
+  margin-left: 1.5em;
+  margin-right: 1.5em;
+}
+
+span {
+  display: block;
+}
