@@ -15,7 +15,7 @@ function Item(props) {
         <Display image={image} />
       </div>
       <div className="beer-details">
-        <h4>{name}: {props.item.nameDisplay}</h4>
+        <h4>{name}: {props.item.name}</h4>
         <div>{props.item.description}</div>
       </div>
     </div>
@@ -37,6 +37,9 @@ function List(props) {
 export default class ListContainer extends Component {
   render() {
     let listDisplay = this.props.loadList ? <Loading /> : <List beers={this.props.brew} />;
+    if (!this.props.loadList && !this.props.brew) {
+      listDisplay = <div>No items found matching the search criteria</div>;
+    }
     return (
       <div className="ListContainer row">
         <h1>Search Results</h1>

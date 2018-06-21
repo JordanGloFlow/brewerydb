@@ -51,7 +51,6 @@ class AppContainer extends Component {
     if (fetching || items === null) return Loading();
 
     const randomBeerForLoad = pickRandomBeer(items);
-    const listItems = [] || this.props.beers;
     const brewery = this.state.brewery;
     const loadList = this.state.loadingList;
     return (
@@ -65,7 +64,6 @@ class AppContainer extends Component {
         {this.state.showList &&
           <ListContainer
             loadList={loadList}
-            list={listItems}
             brew={brewery} />
         }
       </div>
