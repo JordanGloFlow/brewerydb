@@ -22,3 +22,10 @@
 .action-group .ActionButton {
   float: right;
 }
+.alert {
+  color: white;
+  background-color: #d9534f
+}
+.alert:hover {
+  background-color: #c9302c
+}

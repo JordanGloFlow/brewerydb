@@ -17,6 +17,7 @@ app.get('/api/beer', (req, res) => {
 // GET: Search for a beer by name
 app.get('/api/beer/search', (req, res) => {
   brewdb.search.beers({ q: req.query.name }, (init, json) => {
+    const resp = json !== null ? json : [];
     res.send(json);
   });
 });
@@ -24,6 +25,7 @@ app.get('/api/beer/search', (req, res) => {
 // GET: Search for a brewery by name
 app.get('/api/brewery/search', (req, res) => {
   brewdb.search.breweries({ q: req.query.name }, (init, json) => {
+    const resp = json !== null ? json : [];
     res.send(json);
   });
 });

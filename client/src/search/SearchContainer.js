@@ -39,7 +39,7 @@ export default class SearchContainer extends Component {
         <div className="search-box col-md-3">
           <span>Search</span>
           {this.state.error &&
-            <div className="error">
+            <div className="alert alert-primary" role="alert">
             Search can only contain letters,
             numbers, hyphens and spaces</div>
           }
